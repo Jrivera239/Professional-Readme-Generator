@@ -1,7 +1,7 @@
-
 const fs = require ('fs');
 const inquirer = require ('inquirer');
 const generateMarkdown = require ('./utils/generateMarkdown.js');
+
 console.log ("Welcome to my create README generator")
 console.log (" Answer the following questions accordingly")
 
@@ -92,8 +92,6 @@ ${installation}
 ${usage}
 ### instructions
 ${instruction}
-## Credits
-${credit}
 ## License
 ${license}
 # Contact Information
@@ -125,4 +123,3 @@ console.log("Congratulations, we are completed here. Please now feel free the re
    //         writeToFile("README.md",generateMarkdown(userInput));
    //     });
   //  };
-
