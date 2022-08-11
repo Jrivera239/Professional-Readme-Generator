@@ -45,7 +45,7 @@ inquirer.prompt(
             type:'checkbox',
             message:'what license do you used?',
             name:'license',
-            choices:['The MIT License','The Driver License','Microsoft License','NPM License','N/A'],
+            choices:['The MIT License','The Driver License','NPM License','BSD License','GPL License','N/A'],
             validate: (value) => 
             {if (value){return true}
             else {return 'In order to proceed, you need to submit the asked informaton'}}
