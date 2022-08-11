@@ -1,59 +1,70 @@
 
-const inquirer = require ('inquirer');
 const fs = require ('fs');
+const inquirer = require ('inquirer');
+const generateMarkdown = require ('./utils/generateMarkdown.js');
+console.log ("Welcome to my create README generator")
+console.log (" Answer the following questions accordingly")
+
 
 // inquire to generate questions//
 inquirer.prompt(
     [
         {
             type: 'input',
-            message:'Whats the project title?',
+            message:'What title would you like for your README?',
             name:'title',
-            validate: (value) => {if (value){return true}
-            else {return 'i need a value to continue'}}
+            validate: (value) => 
+            {if (value){return true}
+            else {return 'In order to proceed, you need to submit the asked informaton'}}
         },
         {
             type:'input',
-            message:'how do you install your app?',
+            message:'How do you install your app?',
             name:'installation',
-            validate: (value) => {if (value){return true}
-            else {return 'i need a value to continue'}}
+            validate: (value) =>
+             {if (value){return true}
+            else {return 'In order to proceed, you need to submit the asked informaton'}}
         },
         {
             type:'input',
             message:'Instructions to be follow?',
             name:'instruction',
-            validate: (value) => {if (value){return true}
-            else {return 'i need a value to continue'}}
+            validate: (value) =>
+             {if (value){return true}
+            else {return 'In order to proceed, you need to submit the asked informaton'}}
         },
         {
             type:'input',
-            message:'how did you use your app?',
+            message:'How did you use your app?',
             name:'usage',
-            validate: (value) => {if (value){return true}
-            else {return 'i need a value to continue'}}
+            validate: (value) =>
+             {if (value){return true}
+            else {return 'In order to proceed, you need to submit the asked informaton'}}
         },
         {
-            type:'input',
+            type:'checkbox',
             message:'what license do you used?',
             name:'license',
-            choices:['The MIT License','The GPL License','Apache License','GNU License','N/A'],
-            validate: (value) => {if (value){return true}
-            else {return 'i need a value to continue'}}
+            choices:['The MIT License','The Driver License','Microsoft License','NPM License','N/A'],
+            validate: (value) => 
+            {if (value){return true}
+            else {return 'In order to proceed, you need to submit the asked informaton'}}
         },
         {
             type:'input',
-            message:'Github username',
+            message:'Please write your Github username',
             name:'git',
-            validate: (value) => {if (value){return true}
-            else {return 'i need a value to continue'}}
+            validate: (value) => 
+            {if (value){return true}
+            else {return 'In order to proceed, you need to submit the asked informaton'}}
         },
         {
             type:'input',
-            message:'E-mail'?
+            message:' Please write your E-mail',
             name:'email',
-            validate: (value) => {if (value){return true}
-            else {return 'i need a value to continue'}},
+            validate: (value) =>
+            {if (value){return true}
+            else {return 'In order to proceed, you need to submit the asked informaton'}},
         }
     ]
 ).then(({
@@ -63,10 +74,8 @@ inquirer.prompt(
     credit,
     license,
     git,
-    linkedin,
     email,
     usage,
-    contribution,
 })=>{
 
 //template to use//
@@ -75,38 +84,45 @@ const template = `# ${title}
 
 *[Installation](#installation)
 *[Usage](#usage)
-*[Contribtion](#contribution)
 *[Credits](#credits)
 *[License](#license)
 *Installation
 ${installation}
 ## Usage
 ${usage}
-## Contribution
-${contribution}
 ### instructions
 ${instruction}
 ## Credits
 ${credit}
 ## License
 ${license}
-
-# Contact
+# Contact Information
 * GitHub :${git}
-* Linkedin:${linkedin}
 * E-mail:${email}`;
 
+
 // function to create our readme using fs
-createNewfile(tittle, template);
+createNewFile(title, template);
 }
 );
 //creating our createNewFile Function//
-function createNewFile(filename,template){
-
-    fs.writeFile(`./s(fileName.toLowerCase().split('')}.nd`,data,(err)=>{
-        if (err){
-            console.log(err)
+function createNewFile(fileName,data) {
+    fs.writeFile(`./${fileName.toLowerCase().split(' ').join('')}.md`, data, (err) => {
+        if(err) {
+            return console.log (err);
         }
-        console.log('Your README has been generated');
-    })
-}
+  
+console.log("Congratulations, we are completed here. Please now feel free the review your README file");
+});
+};
+//fs.appendFile ('log.txt',`${process.argv[2]}\n`, err =>
+//err ? console.error(err) : console.log('commit logged!'));
+
+   // function init() {
+   //     inquirer.prompt()
+   //     .then(function (userInput) {
+   //         console.log (userinput)
+   //         writeToFile("README.md",generateMarkdown(userInput));
+   //     });
+  //  };
+
