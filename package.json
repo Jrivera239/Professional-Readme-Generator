@@ -1,0 +1,14 @@
+{
+  "name": "module-9",
+  "version": "1.0.0",
+  "description": "JSON package",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
