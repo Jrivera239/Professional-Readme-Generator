@@ -1,6 +1,6 @@
 # Professional-Readme-Generator
 In this README generator you will be able to interact with the console log to 
-generate a README file after answering the questions given. Once the given questions
+generate a README file after answering the questions given with node.js. Once the given questions
 are answered, your README will have the information which you have provided in it.
 
 
@@ -8,3 +8,13 @@ are answered, your README will have the information which you have provided in i
  
  **video clip of readme generator below**
 [Untitled_ Aug 11, 2022 6_27 PM.webm](https://user-images.githubusercontent.com/106676739/184254014-abf12f7d-77fa-47fe-b745-afb5dae6f13d.webm)
+
+
+**Credits**
+
+https://www.npmjs.com/package/inquirer
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Github: https://github.com/Jrivera239
+Email:joelrivera1989@yahoo.com
