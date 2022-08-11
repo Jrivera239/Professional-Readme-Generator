@@ -2,7 +2,7 @@
 
 *[Installation](#installation)
 *[Usage](#usage)
-*[Credits](#credits)
+
 *[License](#license)
 *Installation
 With my hands
@@ -10,8 +10,6 @@ With my hands
 With my computer
 ### instructions
 No need
-## Credits
-undefined
 ## License
 The MIT License,Microsoft License,N/A
 # Contact Information
