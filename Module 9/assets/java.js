@@ -95,7 +95,7 @@ ${instruction}
 ## License
 ${license}
 # Contact Information
-* GitHub :${git}
+* GitHub :github.com/${git}
 * E-mail:${email}`;
 
 
