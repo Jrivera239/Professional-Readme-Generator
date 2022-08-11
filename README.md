@@ -5,3 +5,6 @@ are answered, your README will have the information which you have provided in i
 
 
  If you need guidance choosing a license, here is a link to help https://choosealicense.com/
+ 
+ **video clip of readme generator below**
+[Untitled_ Aug 11, 2022 6_27 PM.webm](https://user-images.githubusercontent.com/106676739/184254014-abf12f7d-77fa-47fe-b745-afb5dae6f13d.webm)
