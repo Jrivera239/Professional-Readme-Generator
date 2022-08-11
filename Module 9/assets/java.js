@@ -78,9 +78,9 @@ inquirer.prompt(
     usage,
 })=>{
 
-//template to use//
+//sources to use//
 
-const template = `# ${title}
+const sources = `# ${title}
 
 *[Installation](#installation)
 *[Usage](#usage)
@@ -102,7 +102,7 @@ ${license}
 
 
 // function to create our readme using fs
-createNewFile(title, template);
+createNewFile(title, sources);
 }
 );
 //creating our createNewFile Function//
