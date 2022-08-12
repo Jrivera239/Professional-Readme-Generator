@@ -1,17 +1,19 @@
-# README module 9
+# new read me
 
 *[Installation](#installation)
 *[Usage](#usage)
-
+*[Credits](#credits)
 *[License](#license)
 *Installation
-With my hands
+app
 ## Usage
-With my computer
+computer
 ### instructions
-No need
+yes
+## Credits
+undefined
 ## License
-The MIT License,Microsoft License,N/A
+The MIT License,The Driver License,NPM License,BSD License,GPL License,N/A
 # Contact Information
-* GitHub :Jrivera239
-* E-mail:joelrivera1989@yahoo.com
+* GitHub :github.com/jrivera239
+* E-mail:jrivera@yahoo.com
